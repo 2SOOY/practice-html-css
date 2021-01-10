@@ -62,36 +62,39 @@ button {
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 354px;
 }
 
 .card-carousel {
   position: relative;
-  height: 240px;
 }
 
 .card-carousel img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
-.card-carousel #prev {
-  position: absolute;
-  top: 50%;
-}
-
+.card-carousel #prev,
 .card-carousel #next {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
+}
+
+.card-carousel #prev {
+  left: 0;
+}
+
+.card-carousel #next {
   right: 0;
 }
 
 .card-content {
   position: relative;
-  height: 114px;
+  padding: 12px;
 }
 
 .card-content strong {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  display: block;
+  text-align: right;
 }
