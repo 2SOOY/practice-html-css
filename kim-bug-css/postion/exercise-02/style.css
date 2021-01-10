@@ -55,3 +55,43 @@ button {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 354px;
+}
+
+.card-carousel {
+  position: relative;
+  height: 240px;
+}
+
+.card-carousel img {
+  width: 100%;
+}
+
+.card-carousel #prev {
+  position: absolute;
+  top: 50%;
+}
+
+.card-carousel #next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.card-content {
+  position: relative;
+  height: 114px;
+}
+
+.card-content strong {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
