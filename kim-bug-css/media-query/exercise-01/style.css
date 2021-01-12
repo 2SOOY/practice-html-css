@@ -41,53 +41,62 @@ a {
 }
 
 /* ▼ WHERE YOUR CODE BEGINS */
+/* mobile */
+
 .landing {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.landing .landing-title {
-  text-align: center;
-}
-
-.banner {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
-  padding: 28px;
-  position: fixed;
-  background: #ffc82c;
+  height: 100vh;
+  padding: 20px;
 }
 
-.banner .banner-title {
-  font-size: 1.125rem;
+.landing-title {
+  text-align: right;
+  margin-bottom: 24px;
 }
 
 .landing-link {
-  padding: 14px 37px;
-  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 52px;
   border: 2px solid white;
-  border-radius: 16px;
+  border-radius: 14px;
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* 모바일 */
-@media screen and (max-width: 375px) {
-  .landing {
-    justify-content: center;
-    align-items: flex-end;
-  }
-  .landing .landing-title {
-    text-align: right;
+.banner {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffc82c;
+}
+
+.banner-title a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  height: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    top: 0;
+    bottom: auto;
   }
 
-  .banner {
-    bottom: 0;
-    padding: 20px;
+  .landing {
+    align-items: center;
+  }
+
+  .landing-title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3rem;
   }
 }
